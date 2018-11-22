@@ -33,3 +33,27 @@ CSS background
     background-repeat           repeat-x/repeat-y/no-repeat
     background-attachment       fixed/
     background-position         right left top bottom
+    background
+        color image repeat attachment position
+
+CSS borders
+    border-style
+        dotted      dashed      solid       double      groove
+        ridge       inset       outset      none        hidden
+    border-width
+        specific values or thin/medium/thick
+    border-color
+        name        HEX         rgb         transparent
+    border-top-style
+    border-right-style
+    border-left-style
+    border-bottom-style
+    border-style
+        4-value     top     right   bottom    left
+        3-value     top     left&right      bottom
+        2-value     top&bottom          left&right
+        1-value     all sides
+    border-radius
+        specific values to curve out corners
+    border
+        width style color

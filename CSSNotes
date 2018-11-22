@@ -14,3 +14,7 @@ h1, h2, p {
 
 css comments
 /*  */
+
+external vs internal
+cascading order, if you have both internal and external stylesheets, the style will be dependant on which comes later
+

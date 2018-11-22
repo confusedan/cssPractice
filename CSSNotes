@@ -1,0 +1,16 @@
+SYNTAX
+Selector    declaration
+h1          { color:blue; }
+            Property:Value
+
+Selectors       used to select elements based on their element name/class/id/attribute
+id Selector     # infront of id of element
+class Selector  . infront of class of element
+
+Group selectors with same style definitions with , 
+h1, h2, p {
+
+}
+
+css comments
+/*  */

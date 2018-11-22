@@ -18,3 +18,11 @@ css comments
 external vs internal
 cascading order, if you have both internal and external stylesheets, the style will be dependant on which comes later
 
+CSS color
+
+color values        RGB/HEX/HSL/RGBA/HSLA
+    RGB             Red Green Blue
+    HEX             HEXCODE for RGB #RRGGBB
+    HSL             Hue Saturation Lightness
+    RGBA            RGB with alpha(transparency)
+    HSLA            HSL with alpha(transparency)

@@ -26,3 +26,10 @@ color values        RGB/HEX/HSL/RGBA/HSLA
     HSL             Hue Saturation Lightness
     RGBA            RGB with alpha(transparency)
     HSLA            HSL with alpha(transparency)
+
+CSS background
+    background-color            rgb/other color values
+    background-image            url("image.url");
+    background-repeat           repeat-x/repeat-y/no-repeat
+    background-attachment       fixed/
+    background-position         right left top bottom

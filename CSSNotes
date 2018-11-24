@@ -88,3 +88,10 @@ CSS padding
         all
     actual width of element = padding on left&right + width
 
+CSS height and width
+    length          px/pt/cm/etc
+    %               % of containing element
+    min-width       minimum width of element
+    max-width       maximum width of element
+    min-height      minimum height of element
+    max-height      maximum height of element

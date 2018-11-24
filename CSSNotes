@@ -57,3 +57,16 @@ CSS borders
         specific values to curve out corners
     border
         width style color
+
+CSS margins
+    margin-top
+    margin-right
+    margin-bottom
+    margine-left
+        auto        browser calculates the margin
+        length      px/pt/cm/etc
+        %           specifies a margin in % of width of containing element
+        inherit     margin should be inherited from parent element
+    margin
+        top right bottom left
+    

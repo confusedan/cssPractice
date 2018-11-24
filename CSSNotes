@@ -105,3 +105,23 @@ CSS box model
         Total element width = width + left&right padding + left&right border + left&right margin
         Total element height = height + top&bottom padding + top&bottom border + top&bottom margin
 
+CSS outline
+    drawn outside border
+    outline-style
+        dotted      dashed      solid       double      groove
+        ridge       inset       outset      none        hidden
+    outline-color
+        name        
+        RGB         
+        HEX         # Value of rgb
+        invert      always visible regardless of background
+    outline-width
+        thin        1px~
+        medium      3px~
+        thick       5px~
+        specific size
+    outline
+        width       style       color
+    outline-offset
+        space between border and outline
+    

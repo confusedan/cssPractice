@@ -95,3 +95,13 @@ CSS height and width
     max-width       maximum width of element
     min-height      minimum height of element
     max-height      maximum height of element
+
+CSS box model
+    Content         The content of the box, where text and images appear
+    Padding         Clears an area around the content. The padding is transparent
+    Border          A border that goes around the padding and content
+    Margin          Clears an area outside the border. The margin is transparent
+    total element width and height
+        Total element width = width + left&right padding + left&right border + left&right margin
+        Total element height = height + top&bottom padding + top&bottom border + top&bottom margin
+

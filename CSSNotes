@@ -62,11 +62,29 @@ CSS margins
     margin-top
     margin-right
     margin-bottom
-    margine-left
+    margin-left
         auto        browser calculates the margin
         length      px/pt/cm/etc
         %           specifies a margin in % of width of containing element
         inherit     margin should be inherited from parent element
     margin
         top right bottom left
-    
+        top left&right bottom
+        top&bottom left&right
+        all
+
+CSS padding
+    padding-top
+    padding-right
+    padding-bottom
+    padding-left
+        length      px/pt/cm/etc
+        %           % of width of containing elements
+        inherit     inherited from parent element
+    padding
+        top right bottom left
+        top left&right bottom
+        top&bottom left&right
+        all
+    actual width of element = padding on left&right + width
+

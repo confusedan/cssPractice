@@ -179,4 +179,68 @@ CSS Text and Font
         font-variant
             normal
             small-caps      all caps but text is smaller
+        font
+            style   variant     weight      size/line-height    family
+
+CSS Icons
+    add specific class="" to any inline element
+    Font Awesome
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    BootStrap
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    Google
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         
+CSS Links
+    color           
+    font-family     
+    background      
+    a:link              normal un-visited link
+    a:visited           visited link
+    a:hover             when mouse over
+        a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
+    a:active            when the link is clicked
+        a:active MUST come after a:hover in the CSS definition in order to be effective.
+    text-decoration     none/underline
+    background-color
+    creating link buttons
+        background-color
+        color
+        padding
+        text-align
+        text-decoration
+        display
+
+CSS Lists
+    list-style-type
+        circle
+        square
+        upper-roman
+        lower-alpha
+        none            removes bullet point
+    list-style-image
+        url('')
+    list-style-position
+        outside         sentences in list will not line break to same coloumn as bullet point
+        inside      
+    list-style
+        type position image
+
+CSS Tables
+    border
+    border-collapse     collapse/none
+    width
+    height
+    text-align          left/center/right
+    vertical-align      top/middle/bottom
+    padding
+    border-bottom
+    :hover              when mouse over change colors
+    :nth-child(even)    every 2nd element
+    background-color
+    color
+    overflow-x          if there are too many coloumns to display on screen
+        auto
+
+CSS display
+    

@@ -243,4 +243,10 @@ CSS Tables
         auto
 
 CSS display
-    
+    overrides default display value of element
+    inline              appears on the same line
+    block               goes to next line
+    none                element does not take up space and is hidden
+CSS visibility
+    hidden              the element still takes up space
+

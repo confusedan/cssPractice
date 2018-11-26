@@ -247,6 +247,46 @@ CSS display
     inline              appears on the same line
     block               goes to next line
     none                element does not take up space and is hidden
+    inline-block        allows set width and height and top and bottom paddings
+
 CSS visibility
     hidden              the element still takes up space
 
+CSS Layout
+    width               still have the width, even after reducing window size
+    max-width           scalable to window size
+    margin:auto         
+
+    position
+        static              not affected by top/bottom/left/right properties
+        relative            position is relative to original position
+        fixed               position with regard to viewport
+        absolute            relative to nearest positioned ancestor, not including static, else relative to body
+        sticky              gives a good offset position until met in viewport, remains on screen
+    z-index             determines which object/element is on top of which
+    clip
+    bottom
+    left
+    right
+    top
+
+    overflow
+        visible             not clipped, renders outside element's box
+        hidden              contents outside element's box are clipped and hidden
+        scroll              add scroll bars both veritcal and horizontal even when not needed
+        auto                add scroll bars automatically if needed
+    overflow-x
+    overflow-y
+
+    float
+        left                
+        right               
+        none                
+        inherit             from parent
+    clear               specifies what elements can float beside the cleared element and on which side
+        none
+        left
+        rightboth
+        inherit
+    box-sizing
+        boder-box

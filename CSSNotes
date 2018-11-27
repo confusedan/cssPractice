@@ -314,5 +314,27 @@ CSS Layout
                 left: 50%;
                 transform: translate(-50%, -50%);
 
+CSS combinator
+    (space)         descendant selector
+        div p{ }
+        1 2
+    (>)             direct child selector
+        div>p{ }
+        1
+    (+)             adjacent sibling selector
+        div+p{ }
+        3
+    (~)             general sibling selector
+        div~p{ }
+        3 4
 
-        
+    <div>
+        <p id="1"></p>
+        <span>
+            <p id="2">
+            </p>
+        </span>
+    </div>
+    <p id="3"></p>
+    <p id="4"></p>
+

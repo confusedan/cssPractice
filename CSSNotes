@@ -338,3 +338,17 @@ CSS combinator
     <p id="3"></p>
     <p id="4"></p>
 
+CSS Pseudo-class
+    selector:pseudo-class{
+        property:value;
+    }
+    list of all pseudo classes
+        https://www.w3schools.com/css/css_pseudo_classes.asp
+
+CSS Pseudo-element
+    selector::pseudo-element {
+        property:value;
+    }
+    list of pseudo elements
+        https://www.w3schools.com/css/css_pseudo_elements.asp
+    

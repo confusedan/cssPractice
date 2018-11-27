@@ -290,3 +290,29 @@ CSS Layout
         inherit
     box-sizing
         boder-box
+
+    align
+        margin          61
+        text-align      128
+        center images
+            make it a block element
+            use margin-left and margin-right
+        left/right align (using position:absolute)
+            position: absolute
+            left/right:0;
+        left/right align (using float)
+            float: left/right;
+        .clearfix
+            overflow:auto;
+        center vertically
+            use padding: __px 0px;
+            or
+                line-height=height
+            or
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+
+        

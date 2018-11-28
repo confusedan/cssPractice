@@ -371,3 +371,29 @@ Image Gallery examples
 
 Image sprite examples
     https://www.w3schools.com/css/css_image_sprites.asp
+
+CSS Attribut selector       useful for styling forms without class or ID
+    a[target]{ }
+    attribute="value"
+        any attributes with value in it
+    attribute~="value"      contains exactly value, can have other keywords but not connected
+        value is flower
+            accepted    flower      flower here         big flower
+            rejected    flowerbig   flower-top
+    attribute|="value"      value is alone or connected with -
+        value is flower
+            accepted    flower-top  flower
+            rejected    flowerbig   big flower
+    attribute^="value"      starts with value
+        value is flower
+            accepted    flower-top  flower              flower big      flowerbig
+            rejected    big flower
+    attribute$="value"      ends with value
+        value is flower
+            accepted    top-flower  flower              big flower      big flower
+            rejected    big flower
+    attribute*="value"      conatians specific value
+        value is flower
+            accepted    flower-top  flower              flower big      flowerbig   big flower
+            rejected    big flowr
+

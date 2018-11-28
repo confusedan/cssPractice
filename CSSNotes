@@ -397,3 +397,16 @@ CSS Attribut selector       useful for styling forms without class or ID
             accepted    flower-top  flower              flower big      flowerbig   big flower
             rejected    big flowr
 
+CSS forms
+    examples
+    https://www.w3schools.com/css/css_form.asp
+
+CSS Counters        tracks the number of time a variable is used
+    counter-reset 
+        Creates or resets a counter
+    counter-increment 
+        Increments a counter value
+    content 
+        Inserts generated content
+    counter() or counters() function
+        Adds the value of a counter to an element

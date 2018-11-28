@@ -351,4 +351,23 @@ CSS Pseudo-element
     }
     list of pseudo elements
         https://www.w3schools.com/css/css_pseudo_elements.asp
-    
+
+CSS Opacity
+    opacity:        value 0.0 to 1.0
+        value
+    filter:         IE8 and earlier, value = 0 to 100
+        alpha(opacity=value)
+    RGBA            A value 0.0 to 1.0
+        background: rgba(R,G,B,A)
+
+Navigation bar examples
+    https://www.w3schools.com/css/css_navbar.asp
+
+Dropdown menu examples
+    https://www.w3schools.com/css/css_dropdowns.asp
+
+Image Gallery examples
+    https://www.w3schools.com/css/css_image_gallery.asp
+
+Image sprite examples
+    https://www.w3schools.com/css/css_image_sprites.asp

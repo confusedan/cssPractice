@@ -410,3 +410,28 @@ CSS Counters        tracks the number of time a variable is used
         Inserts generated content
     counter() or counters() function
         Adds the value of a counter to an element
+
+CSS Website Layout
+    examples
+    https://www.w3schools.com/css/css_website_layout.asp
+
+CSS Units
+    absoulute
+        cm      centimetres
+        mm      millimetres
+        in      inches      (1in = 96px)
+        px      pixel       
+        pt      point       (1pt = 1/72 of 1in)
+        pc      picas       (1pc = 12pt)
+    relative
+        em      relative to font-size of element
+        ex      relative to x-height of font
+        ch      relative to width of 0
+        rem     relatice tot font-size of root element
+        vw      1% of width of viewport
+        vh      1% of height of viewport
+        vmin    1% of viewport's smaller dimension
+        vmax    1% of viewport's larger dimension
+        %       relative to parent element
+
+

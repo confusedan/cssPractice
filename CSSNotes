@@ -434,4 +434,7 @@ CSS Units
         vmax    1% of viewport's larger dimension
         %       relative to parent element
 
+CSS Specificity
+    rules
+    https://www.w3schools.com/css/css_specificity.asp
 

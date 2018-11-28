@@ -1,0 +1,440 @@
+SYNTAX
+Selector    declaration
+h1          { color:blue; }
+            Property:Value
+
+Selectors       used to select elements based on their element name/class/id/attribute
+id Selector     # infront of id of element
+class Selector  . infront of class of element
+
+Group selectors with same style definitions with , 
+h1, h2, p {
+
+}
+
+css comments
+/*  */
+
+external vs internal
+cascading order, if you have both internal and external stylesheets, the style will be dependant on which comes later
+
+CSS color
+
+color values        RGB/HEX/HSL/RGBA/HSLA
+    RGB             Red Green Blue
+    HEX             HEXCODE for RGB #RRGGBB
+    HSL             Hue Saturation Lightness
+    RGBA            RGB with alpha(transparency)
+    HSLA            HSL with alpha(transparency)
+
+CSS background
+    background-color            rgb/other color values
+    background-image            url("image.url");
+    background-repeat           repeat-x/repeat-y/no-repeat
+    background-attachment       fixed/
+    background-position         right left top bottom
+    background
+        color image repeat attachment position
+
+CSS borders
+    border-style
+        dotted      dashed      solid       double      groove
+        ridge       inset       outset      none        hidden
+    border-width
+        specific values or thin/medium/thick
+    border-color
+        name        HEX         rgb         transparent
+    border-top-style
+    border-right-style
+    border-left-style
+    border-bottom-style
+    border-style
+        4-value     top     right   bottom    left
+        3-value     top     left&right      bottom
+        2-value     top&bottom          left&right
+        1-value     all sides
+    border-radius
+        specific values to curve out corners
+    border
+        width style color
+
+CSS margins
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+        auto        browser calculates the margin
+        length      px/pt/cm/etc
+        %           specifies a margin in % of width of containing element
+        inherit     margin should be inherited from parent element
+    margin
+        top right bottom left
+        top left&right bottom
+        top&bottom left&right
+        all
+
+CSS padding
+    padding-top
+    padding-right
+    padding-bottom
+    padding-left
+        length      px/pt/cm/etc
+        %           % of width of containing elements
+        inherit     inherited from parent element
+    padding
+        top right bottom left
+        top left&right bottom
+        top&bottom left&right
+        all
+    actual width of element = padding on left&right + width
+
+CSS height and width
+    length          px/pt/cm/etc
+    %               % of containing element
+    min-width       minimum width of element
+    max-width       maximum width of element
+    min-height      minimum height of element
+    max-height      maximum height of element
+
+CSS box model
+    Content         The content of the box, where text and images appear
+    Padding         Clears an area around the content. The padding is transparent
+    Border          A border that goes around the padding and content
+    Margin          Clears an area outside the border. The margin is transparent
+    total element width and height
+        Total element width = width + left&right padding + left&right border + left&right margin
+        Total element height = height + top&bottom padding + top&bottom border + top&bottom margin
+
+CSS outline
+    drawn outside border
+    outline-style
+        dotted      dashed      solid       double      groove
+        ridge       inset       outset      none        hidden
+    outline-color
+        name        
+        RGB         
+        HEX         # Value of rgb
+        invert      always visible regardless of background
+    outline-width
+        thin        1px~
+        medium      3px~
+        thick       5px~
+        specific size
+    outline
+        width       style       color
+    outline-offset
+        space between border and outline
+
+CSS Text and Font
+    CSS Text
+        color           set text color
+            name
+            HEX
+            rgb
+        text-align
+            center
+            left
+            right
+            justify
+        text-decoration
+            none
+            overline
+            line-through
+            underline
+        text-transform
+            uppercase   all caps
+            lowercase
+            capitalize  capitalize first letter of each word
+        text-indent
+            specifies indentation of first line of text/paragraph
+        text-spacing
+            specifies space between characters in text(kerning)
+        line-height
+            specifies space between lines
+        direction
+            change the direction of letters
+        word-spacing
+            specifies space between words in text
+        text-shadow
+            adds shadow to text
+            horizontal vertical color
+        
+    CSS Font
+        generic family      serif/sans-serif/monospace
+        font family         specific typeface
+        font-family
+            Start with the font you want, and end with a generic family, 
+            to let the browser pick a similar font in the generic family, 
+            if no other fonts are available.
+        font-style
+            normal
+            italic
+            oblique         similar to italic but less supported
+        font-size
+            absolute        px/pt/em/etc
+            relative        to elements in browser      %/vw(% of browser window size)
+        font-weight
+            normal
+            bold
+        font-variant
+            normal
+            small-caps      all caps but text is smaller
+        font
+            style   variant     weight      size/line-height    family
+
+CSS Icons
+    add specific class="" to any inline element
+    Font Awesome
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    BootStrap
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    Google
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+CSS Links
+    color           
+    font-family     
+    background      
+    a:link              normal un-visited link
+    a:visited           visited link
+    a:hover             when mouse over
+        a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
+    a:active            when the link is clicked
+        a:active MUST come after a:hover in the CSS definition in order to be effective.
+    text-decoration     none/underline
+    background-color
+    creating link buttons
+        background-color
+        color
+        padding
+        text-align
+        text-decoration
+        display
+
+CSS Lists
+    list-style-type
+        circle
+        square
+        upper-roman
+        lower-alpha
+        none            removes bullet point
+    list-style-image
+        url('')
+    list-style-position
+        outside         sentences in list will not line break to same coloumn as bullet point
+        inside      
+    list-style
+        type position image
+
+CSS Tables
+    border
+    border-collapse     collapse/none
+    width
+    height
+    text-align          left/center/right
+    vertical-align      top/middle/bottom
+    padding
+    border-bottom
+    :hover              when mouse over change colors
+    :nth-child(even)    every 2nd element
+    background-color
+    color
+    overflow-x          if there are too many coloumns to display on screen
+        auto
+
+CSS display
+    overrides default display value of element
+    inline              appears on the same line
+    block               goes to next line
+    none                element does not take up space and is hidden
+    inline-block        allows set width and height and top and bottom paddings
+
+CSS visibility
+    hidden              the element still takes up space
+
+CSS Layout
+    width               still have the width, even after reducing window size
+    max-width           scalable to window size
+    margin:auto         
+
+    position
+        static              not affected by top/bottom/left/right properties
+        relative            position is relative to original position
+        fixed               position with regard to viewport
+        absolute            relative to nearest positioned ancestor, not including static, else relative to body
+        sticky              gives a good offset position until met in viewport, remains on screen
+    z-index             determines which object/element is on top of which
+    clip
+    bottom
+    left
+    right
+    top
+
+    overflow
+        visible             not clipped, renders outside element's box
+        hidden              contents outside element's box are clipped and hidden
+        scroll              add scroll bars both veritcal and horizontal even when not needed
+        auto                add scroll bars automatically if needed
+    overflow-x
+    overflow-y
+
+    float
+        left                
+        right               
+        none                
+        inherit             from parent
+    clear               specifies what elements can float beside the cleared element and on which side
+        none
+        left
+        rightboth
+        inherit
+    box-sizing
+        boder-box
+
+    align
+        margin          61
+        text-align      128
+        center images
+            make it a block element
+            use margin-left and margin-right
+        left/right align (using position:absolute)
+            position: absolute
+            left/right:0;
+        left/right align (using float)
+            float: left/right;
+        .clearfix
+            overflow:auto;
+        center vertically
+            use padding: __px 0px;
+            or
+                line-height=height
+            or
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+CSS combinator
+    (space)         descendant selector
+        div p{ }
+        1 2
+    (>)             direct child selector
+        div>p{ }
+        1
+    (+)             adjacent sibling selector
+        div+p{ }
+        3
+    (~)             general sibling selector
+        div~p{ }
+        3 4
+
+    <div>
+        <p id="1"></p>
+        <span>
+            <p id="2">
+            </p>
+        </span>
+    </div>
+    <p id="3"></p>
+    <p id="4"></p>
+
+CSS Pseudo-class
+    selector:pseudo-class{
+        property:value;
+    }
+    list of all pseudo classes
+        https://www.w3schools.com/css/css_pseudo_classes.asp
+
+CSS Pseudo-element
+    selector::pseudo-element {
+        property:value;
+    }
+    list of pseudo elements
+        https://www.w3schools.com/css/css_pseudo_elements.asp
+
+CSS Opacity
+    opacity:        value 0.0 to 1.0
+        value
+    filter:         IE8 and earlier, value = 0 to 100
+        alpha(opacity=value)
+    RGBA            A value 0.0 to 1.0
+        background: rgba(R,G,B,A)
+
+Navigation bar examples
+    https://www.w3schools.com/css/css_navbar.asp
+
+Dropdown menu examples
+    https://www.w3schools.com/css/css_dropdowns.asp
+
+Image Gallery examples
+    https://www.w3schools.com/css/css_image_gallery.asp
+
+Image sprite examples
+    https://www.w3schools.com/css/css_image_sprites.asp
+
+CSS Attribut selector       useful for styling forms without class or ID
+    a[target]{ }
+    attribute="value"
+        any attributes with value in it
+    attribute~="value"      contains exactly value, can have other keywords but not connected
+        value is flower
+            accepted    flower      flower here         big flower
+            rejected    flowerbig   flower-top
+    attribute|="value"      value is alone or connected with -
+        value is flower
+            accepted    flower-top  flower
+            rejected    flowerbig   big flower
+    attribute^="value"      starts with value
+        value is flower
+            accepted    flower-top  flower              flower big      flowerbig
+            rejected    big flower
+    attribute$="value"      ends with value
+        value is flower
+            accepted    top-flower  flower              big flower      big flower
+            rejected    big flower
+    attribute*="value"      conatians specific value
+        value is flower
+            accepted    flower-top  flower              flower big      flowerbig   big flower
+            rejected    big flowr
+
+CSS forms
+    examples
+    https://www.w3schools.com/css/css_form.asp
+
+CSS Counters        tracks the number of time a variable is used
+    counter-reset 
+        Creates or resets a counter
+    counter-increment 
+        Increments a counter value
+    content 
+        Inserts generated content
+    counter() or counters() function
+        Adds the value of a counter to an element
+
+CSS Website Layout
+    examples
+    https://www.w3schools.com/css/css_website_layout.asp
+
+CSS Units
+    absoulute
+        cm      centimetres
+        mm      millimetres
+        in      inches      (1in = 96px)
+        px      pixel       
+        pt      point       (1pt = 1/72 of 1in)
+        pc      picas       (1pc = 12pt)
+    relative
+        em      relative to font-size of element
+        ex      relative to x-height of font
+        ch      relative to width of 0
+        rem     relatice tot font-size of root element
+        vw      1% of width of viewport
+        vh      1% of height of viewport
+        vmin    1% of viewport's smaller dimension
+        vmax    1% of viewport's larger dimension
+        %       relative to parent element
+
+CSS Specificity
+    rules
+    https://www.w3schools.com/css/css_specificity.asp
+
